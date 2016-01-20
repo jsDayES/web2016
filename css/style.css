@@ -45,7 +45,7 @@ h1, h1, h3, h4, h5, h6 {
 
 .center-title {
   margin-bottom: 50px;}
-  .center-title h3 {
+  .center-title h3, .center-title h2 {
     text-transform: uppercase;
     font-weight: 700;
     margin: 0px;
