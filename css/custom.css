@@ -1,1 +1,5 @@
+body { color:#000; }
 .center-title h2 { font-size:35px }
+.proposals .center-title p, .center-title p, .btn-yellow { color:#000; }
+.proposals-style li .detail .date { color: #222; }
+.schedule-style li .detail .time { color: #815d18; }
