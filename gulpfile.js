@@ -49,11 +49,6 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(paths.dist + '/fonts'));
 });
 
-gulp.task('copy', function () {
-  return gulp.src('./**/*.css')
-    .pipe(gulp.dest(paths.dist + '/css'));
-});
-
 gulp.task('build', ['images', 'fonts', 'js', 'css'], function () {
   return gulp.src('index.html')
     .pipe($.useref())
