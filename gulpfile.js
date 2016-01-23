@@ -16,10 +16,10 @@ var paths = {
   dist: './dist/'
 };
 
-gulp.task('clean', function (cb) {
-  del([
-    'dist/**',
-  ], cb);
+gulp.task('clean', function () {
+  return del([
+    './dist/**',
+  ]);
 });
 
 gulp.task('images', function () {
@@ -43,7 +43,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('build', function () {
-  return gulp.src(paths.html)
+  return gulp.src(['./*.html', './css/**/*.css', './js/**/*.js'])
     .pipe($.useref())
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssmin()))
@@ -68,6 +68,6 @@ gulp.task('server', function () {
     }));
 });
 
-gulp.task('build', function () {
-  runSequence('clean', 'images', 'concats', 'copy');
+gulp.task('dist', ['clean'], function (cb) {
+  runSequence('images', 'build', cb);
 })
