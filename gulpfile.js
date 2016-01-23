@@ -6,6 +6,7 @@ var fs = require('fs');
 var $ = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');
 var webserver = require('gulp-webserver');
+var debug = require('gulp-debug');
 var del = require('del');
 
 var paths = {
@@ -31,7 +32,7 @@ gulp.task('images', function () {
 
 gulp.task('js', function () {
   return gulp.src(paths.js)
-    .pipe($.concat('app-main.js'))
+    .pipe($.concat('main.js'))
     .pipe($.uglify())
     .pipe(gulp.dest(paths.dist + '/js/'));
 });
@@ -48,32 +49,20 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(paths.dist + '/css/fonts'));
 });
 
-gulp.task('build', function () {
-  var assets = $.useref.assets({
-    searchPath: ['./css/**/*.css', './js/**/*.js']
-  });
+gulp.task('copy', function () {
+  return gulp.src('./**/*.css')
+    .pipe(gulp.dest(paths.dist + '/css'));
+});
 
-  return gulp.src('./*.html')
-    .pipe(assets)
-    .pipe($.if('*.js', $.uglify({
-      preserveComments: 'some'
-    })))
-    .pipe($.if('*.css', $.cssmin()))
-    .pipe(assets.restore())
+gulp.task('build', ['images', 'fonts', 'js', 'css'], function () {
+  return gulp.src('index.html')
     .pipe($.useref())
-    // Minify any HTML
-    .pipe($.if('*.html', $.minifyHtml({
+    .pipe($.minifyHtml({
       quotes: true,
       empty: true,
       spare: true
-    })))
-    .pipe(gulp.dest(paths.dist))
-});
-
-gulp.task('html', function () {
-  return gulp.src(paths.html)
-    .pipe($.minifyHtml())
-    .pipe(gulp.dest(paths.dist));
+    }))
+    .pipe(gulp.dest('dist'))
 });
 
 gulp.task('server', function () {
@@ -88,6 +77,18 @@ gulp.task('server', function () {
     }));
 });
 
-gulp.task('dist', ['clean'], function (cb) {
-  runSequence('images', 'fonts', 'build', cb);
+gulp.task('server:dist', ['dist'], function () {
+  gulp.src('.')
+    .pipe(webserver({
+      port: 5000,
+      livereload: false,
+      directoryListing: {
+        enable: false,
+      },
+      open: 'dist/index.html'
+    }));
+});
+
+gulp.task('dist', function (cb) {
+  runSequence('clean', 'build', cb);
 })
