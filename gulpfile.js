@@ -12,7 +12,7 @@ var del = require('del');
 var paths = {
   html: './*.html',
   fonts: ['./font-awesome/fonts/*.*', './bootstrap/fonts/*.*'],
-  css: ['./bootstrap/css/bootstrap.min.css', './css/*.css'],
+  css: ['./bootstrap/css/bootstrap.min.css', './font-awesome/css/font-awesome.min.css', './css/*.css'],
   js: ['bootstrap/js/bootstrap.min.js', './js/**/*.js'],
   images: './img/**/*',
   dist: './dist/'
@@ -27,7 +27,7 @@ gulp.task('clean', function () {
 gulp.task('images', function () {
   return gulp.src(paths.images)
     .pipe($.imagemin({ progressive: true }))
-    .pipe(gulp.dest(paths.dist + '/images/'));
+    .pipe(gulp.dest(paths.dist + '/img/'));
 });
 
 gulp.task('js', function () {
