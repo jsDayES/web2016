@@ -13,7 +13,7 @@ var paths = {
   html: './*.html',
   fonts: ['./font-awesome/fonts/*.*', './bootstrap/fonts/*.*'],
   css: ['./bootstrap/css/bootstrap.min.css', './font-awesome/css/font-awesome.min.css', './css/*.css'],
-  js: ['bootstrap/js/bootstrap.min.js', './js/**/*.js'],
+  js: ['./js/jquery.min.js', './bootstrap/./js/bootstrap.min.js', './js/jquery.easing.1.3.min.js', './js/jquery.backstretch.min.js', './js/jquery.flexslider-min.js', './js/owl.carousel.min.js', './js/masonry.pkgd.min.js', './js/jquery-ui.min.js', './js/pace.min.js', './js/wow.min.js', './js/jqBootstrapValidation.js', './js/custom.js', './js/jquery.countdown.min.js'],
   images: './img/**/*',
   dist: './dist/'
 };
