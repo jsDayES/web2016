@@ -10,6 +10,7 @@ var del = require('del');
 
 var paths = {
   html: './*.html',
+  fonts: './font-awesome/fonts/*.*',
   css: './css/**/*.css',
   js: './js/**/*.js',
   images: './img/**/*',
@@ -42,6 +43,11 @@ gulp.task('css', function () {
     .pipe(gulp.dest(paths.dist + '/css/'));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest(paths.dist + '/css/fonts'));
+});
+
 gulp.task('build', function () {
   return gulp.src(['./*.html', './css/**/*.css', './js/**/*.js'])
     .pipe($.useref())
@@ -69,5 +75,5 @@ gulp.task('server', function () {
 });
 
 gulp.task('dist', ['clean'], function (cb) {
-  runSequence('images', 'build', cb);
+  runSequence('images', 'fonts', 'js', 'css', 'html', cb);
 })
