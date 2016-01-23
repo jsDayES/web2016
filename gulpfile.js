@@ -11,9 +11,9 @@ var del = require('del');
 
 var paths = {
   html: './*.html',
-  fonts: './font-awesome/fonts/*.*',
-  css: './css/**/*.css',
-  js: './js/**/*.js',
+  fonts: ['./font-awesome/fonts/*.*', './bootstrap/fonts/*.*'],
+  css: ['./bootstrap/css/bootstrap.min.css', './css/*.css'],
+  js: ['bootstrap/js/bootstrap.min.js', './js/**/*.js'],
   images: './img/**/*',
   dist: './dist/'
 };
@@ -46,7 +46,7 @@ gulp.task('css', function () {
 
 gulp.task('fonts', function () {
   return gulp.src(paths.fonts)
-    .pipe(gulp.dest(paths.dist + '/css/fonts'));
+    .pipe(gulp.dest(paths.dist + '/fonts'));
 });
 
 gulp.task('copy', function () {
