@@ -32,7 +32,7 @@ gulp.task('images', function () {
 
 gulp.task('js', function () {
   return gulp.src(paths.js)
-    .pipe($.concat('main.js'))
+    .pipe($.concat('main.js',{newLine: ';'}))
     .pipe($.uglify())
     .pipe(gulp.dest(paths.dist + '/js/'));
 });
