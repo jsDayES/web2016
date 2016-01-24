@@ -3,9 +3,7 @@
  * Version : V1.1
  * 
  */
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,500,700);
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,600);
-@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+
 /**base**/
 html, body {
   height: 100%; }
