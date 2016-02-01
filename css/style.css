@@ -262,8 +262,8 @@ Home style
   -text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 30px;
-  display: inline-block;
-  margin-bottom: 10px;
+  -display: inline-block;
+  -margin-bottom: 10px;
 }
 
 /**********************
@@ -294,6 +294,9 @@ Speakers style
 Banner style
 
 **********************/
+.box-1 {
+    background-color: #f2b84b;
+}
 .banner {
   padding: 80px 0; }
   .banner .center-title h3 {
@@ -353,6 +356,25 @@ Banner style
     display: none; }
   .banner .flex-direction-nav a:before {
     display: none; }
+    
+
+/**********************
+
+Testimonials style
+
+**********************/
+.twitter-icon {
+    font-size: 50px;
+    color: #55acee;
+}
+.testi-item p {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0px;
+    font-size: 35px;
+    line-height: 35px;
+    font-family: "Raleway", sans-serif;
+}
 
 /**********************
 
@@ -395,8 +417,13 @@ Schedule style
         margin-top: 5px;
         margin-right: 5px;}
 
+    .schedule-style img {
+        margin-left: 10px;
+    }
+    
 .schedule-shadow {
-    background-color: #fbecd0;
+    -background-color: #fbecd0;
+    background-color: #fff;
 }
 
 /**********************
@@ -639,7 +666,7 @@ Proposals style
 .proposals {
   padding-top: 80px;
   padding-bottom: 50px;
-  background-color: #f2b84b; }
+  background-color: #fff; }
   .proposals .center-title h3 {
     color: #fff; }
   .proposals .center-title p {
