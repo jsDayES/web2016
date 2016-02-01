@@ -6,7 +6,6 @@ var fs          = require ('fs');
 var $           = require ('gulp-load-plugins')();
 var runSequence = require ('run-sequence');
 var webserver   = require ('gulp-webserver');
-var debug       = require ('gulp-debug');
 var del         = require ('del');
 
 var paths = {
