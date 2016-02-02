@@ -28,3 +28,6 @@ table th {
     color: #333;
 }
     
+
+#clock span, #clock p { color:#000 }
+.count-down-1 { margin-bottom: 4em; }
