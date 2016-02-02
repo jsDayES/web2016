@@ -9,3 +9,22 @@ body { color:#000; }
   .overImg p { margin:1em 0 }
 
 .welcome { margin-top:5em; padding:3em; }
+
+table {
+    background: #fff;
+}
+table th {
+    -background: #f2b84b;
+    -background: rgba(242,184,75,0.5);
+    background: #fff;
+    color: #333;
+}
+.name {
+    text-transform: none;
+}
+
+[scope] {
+    background-color: #f2b84b;
+    color: #333;
+}
+    

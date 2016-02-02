@@ -619,7 +619,8 @@ Organizers style
 .section-organizers {
   padding-top: 80px;
   padding-bottom: 50px;
-  background-color: #f1f1f1; }
+  -background-color: #f1f1f1;
+    background-color: #fff;}
   .section-organizers .organizers-box {
     position: relative;
     margin-bottom: 30px;
@@ -658,6 +659,17 @@ Organizers style
   -ms-border-radius: 0px;
   border-radius: 0px; }
 
+/**********************
+
+Sponsors style
+
+**********************/
+   .section-sponsors {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #f1f1f1;
+} 
+    
 /**********************
 
 Proposals style
