@@ -1,6 +1,6 @@
 {
   "name": "MadridJSDay",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Félix Zapata",
   "devDependencies": {
     "del": "^2.2.0",
