@@ -40,6 +40,8 @@ iframe{ max-width: 100%; }
     max-width: 100%;
 }
 
+.sponsors-slider, .organizers-slider { list-style:none }
+
 .sponsors-box  {
   display:block;
   height:160px;
