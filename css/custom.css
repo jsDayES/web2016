@@ -40,24 +40,32 @@ iframe{ max-width: 100%; }
     max-width: 100%;
 }
 
-.sponsors-slider, .organizers-slider { list-style:none }
+.logos, .organizers-slider { list-style:none }
 
-.sponsors-box  {
+.logos { margin:1em 0 4em 0 }
+  .logos li { display:inline-block; vertical-align:top; margin:0 1em }
+  .logos li:first-child { margin-left:0 }
+
+
+.box  {
   display:block;
   height:160px;
+  padding:2em;
+  background:#fff;
+  border-radius:5px;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-.sponsors-box img {
+.box img {
   position: relative;
   top: 50%;
-  display:initial;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 
 @media (max-width: 768px) {
     .welcome{ padding: .5em 0; }
