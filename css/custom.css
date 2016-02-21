@@ -42,8 +42,8 @@ iframe{ max-width: 100%; }
 
 .logos, .organizers-slider { list-style:none }
 
-.logos { margin:1em 0 4em 0 }
-  .logos li { display:inline-block; vertical-align:top; margin:1em }
+.logos { margin:1em 0 4em 0; padding:0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: space-around;  }
+  .logos li { text-align:center }
 
 
 .box  {
