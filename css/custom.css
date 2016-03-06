@@ -67,6 +67,9 @@ iframe{ max-width: 100%; }
 }
 
 
+.tickets p { font-size:1.7em  }
+
+
 @media (max-width: 768px) {
   .welcome{ padding: .5em 0; }
   .logos li { display:inline-block; margin:1em 1em 0 0 }
