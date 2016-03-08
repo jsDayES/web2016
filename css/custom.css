@@ -66,10 +66,34 @@ iframe{ max-width: 100%; }
   transform: translateY(-50%);
 }
 
+.pricing-simple { min-height:440px }
 
-.tickets { padding-bottom:4em }
-.tickets p { font-size:1.7em  }
+.pricing-simple p { font-size:1.7em }
 
+.pricing-simple p, .pricing-simple li { color:#000 }
+
+.pricing-simple h3 {
+    border-bottom: 1px solid #D0D6DF;
+    margin: 0px;
+    color: #666;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pricing-simple h4 {
+    margin: 0px;
+    padding: 30px 20px;
+    color:#000;
+    border-bottom: 1px solid #D0D6DF;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #fff;
+
+}
 
 @media (max-width: 768px) {
   .welcome{ padding: .5em 0; }
