@@ -288,6 +288,10 @@ Speakers style
   .img-speaker-box p {
     font-weight: 400;
     font-size: 13px; }
+    .speaker-bio {
+        height: 130px;
+        overflow:scroll;
+    }
 
 /**********************
 
@@ -425,6 +429,9 @@ Schedule style
     -background-color: #fbecd0;
     background-color: #fff;
 }
+    .schedule-link {
+        color: #000;
+    }
 
 /**********************
 
