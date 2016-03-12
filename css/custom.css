@@ -97,6 +97,33 @@ iframe{ max-width: 100%; }
 
 }
 
+/**********************
+
+Speakers style
+
+**********************/
+.speakers-section {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #fff; }
+
+.img-speaker-box {
+  margin-bottom: 30px; }
+  .img-speaker-box img {
+    margin-bottom: 5px; }
+  .img-speaker-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0px; }
+  .img-speaker-box p {
+    font-weight: 400;
+    font-size: 13px; }
+    .speaker-bio {
+        height: 130px;
+        overflow:scroll;
+    }
+
 @media (max-width: 768px) {
   .welcome{ padding: .5em 0; }
   .logos li { display:inline-block; margin:1em 1em 0 0 }
