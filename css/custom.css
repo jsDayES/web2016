@@ -70,7 +70,9 @@ iframe{ max-width: 100%; }
 
 .pricing-simple p { font-size:1.7em }
 
-.pricing-simple p, .pricing-simple li { color:#000 }
+.pricing-simple p, .pricing-simple li, .pricing-simple a { color:#000 }
+
+.pricing-simple .btn { font-size:1.7em; font-weight:bold }
 
 .pricing-simple h3 {
     border-bottom: 1px solid #D0D6DF;
