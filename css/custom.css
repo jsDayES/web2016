@@ -103,7 +103,7 @@ Speakers style
 
 **********************/
 
-ul.speakers { display:flex; justify-content: space-around; flex-wrap:wrap; list-style:none    }
+ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-style:none    }
 .speakers > li { width:300px; margin: 0 1em;   }
 .speakers .img-speaker-box { text-align:center }
 .speakers-section {
