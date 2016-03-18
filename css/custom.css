@@ -97,7 +97,23 @@ iframe{ max-width: 100%; }
 
 }
 
-.koliseo-schedule {}
+.koliseo-schedule { padding:1em; background:#fff }
+.koliseo-schedule a { color:#89621a }
+.koliseo-schedule a:hover { text-decoration:underline }
+.koliseo-schedule table { width:100%; background:none; border-bottom:1px solid #ddd; }
+.koliseo-schedule th { background:none }
+.koliseo-schedule .ka-tabs { margin:0 0 1em 0; padding:0; list-style:none;  border-bottom: 2px solid #ddd;  }
+.koliseo-schedule .ka-tabs li { display:inline-block; margin-right:1em }
+#ka-user-info, .ka-hint { display:none }
+.koliseo-schedule tbody th { padding:.5em; background:#f2b84b; border-bottom:1px solid #ddd }
+.koliseo-schedule td { padding:.5em; border-bottom:1px solid #ddd; background:#fff }
+.ka-tab-a { display:block; padding:1em 2em}
+.ka-tab-a.selected {
+    color:#000;
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 2px solid #89621a;
+    margin-bottom: -2px;
+}
 
 /**********************
 
