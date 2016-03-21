@@ -148,9 +148,9 @@
     bottom:0
 }
 .ka-talk-details-window {
-    background:#008CBA;
+    background:#f2b84b;
     padding:30px 4px 4px;
-    z-index:100;
+    z-index:1040;
     position:fixed;
     top:50%;
     left:50%;
