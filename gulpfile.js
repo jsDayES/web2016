@@ -22,6 +22,7 @@ var paths = {
         'css/owl.carousel.css',
         'css/jquery-ui.min.css',
         'css/style.css',
+        'css/kagenda-styles.css',
         'css/custom.css'
     ],
     js     : [
