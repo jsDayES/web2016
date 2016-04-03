@@ -28,7 +28,7 @@ organizador inmediatamente.
 
 ### JSDayES 2016
 
-* Organizadores: Raquel Benito (raquel.benito@adesis.com), Alejandro Fernández [@pinchito](https://twitter.com/pinchito), María Sánchez [@chimarys](https://twitter.com/chimarys), Javier Vélez [@javiervelezreye](https://twitter.com/javiervelezreye), Félix Zapata [@felixzapata](https://twitter.com/felixzapata), Isabel Cabezas [@isabelcabezasm](https://twitter.com/isabelcabezasm), Juan Fran Alcántara (juanfran.ag@gmail.com).
+* Organizadores: Raquel Benito (raquel.benito@gft.com), Alejandro Fernández [@pinchito](https://twitter.com/pinchito), María Sánchez [@chimarys](https://twitter.com/chimarys), Javier Vélez [@javiervelezreye](https://twitter.com/javiervelezreye), Félix Zapata [@felixzapata](https://twitter.com/felixzapata), Isabel Cabezas [@isabelcabezasm](https://twitter.com/isabelcabezasm), Juan Fran Alcántara (juanfran.ag@gmail.com).
 
 **Si tienes preguntas o sugerencias sobre este código de conducta,
 por favor contacta con uno de los organizadores.**
