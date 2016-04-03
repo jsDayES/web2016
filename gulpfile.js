@@ -10,6 +10,7 @@ var del         = require ('del');
 
 var paths = {
     html   : './*.html',
+    koliseo : ['./js/koliseo-agenda.js', './js/koliseo-polyfill.js'],
     fonts  : [
         './font-awesome/fonts/*.*', 
         './bootstrap/fonts/*.*'
@@ -21,6 +22,7 @@ var paths = {
         'css/owl.carousel.css',
         'css/jquery-ui.min.css',
         'css/style.css',
+        'css/kagenda-styles.css',
         'css/custom.css'
     ],
     js     : [
@@ -61,6 +63,11 @@ gulp.task ('js', function () {
         .pipe (gulp.dest (paths.dist + '/js/'));
 });
 
+gulp.task ('koliseo', function () {
+    return gulp.src (paths.koliseo)
+        .pipe (gulp.dest (paths.dist + '/js/'));
+});
+
 gulp.task ('css', function () {
     return gulp.src (paths.css)
         .pipe ($.concat ('main.css'))
@@ -73,7 +80,7 @@ gulp.task ('fonts', function () {
         .pipe (gulp.dest(paths.dist + '/fonts'));
 });
 
-gulp.task ('build', ['images', 'fonts', 'js', 'css'], function () {
+gulp.task ('build', ['images', 'fonts', 'koliseo', 'js', 'css'], function () {
     return gulp.src ('index.html')
         .pipe ($.useref ())
         .pipe ($.minifyHtml ({

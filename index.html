@@ -16,16 +16,16 @@
         <link rel="stylesheet" type="text/css" href="css/owl.theme.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/kagenda-styles.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/custom.css" media="screen">
         <!-- endbuild-->
     </head>
     <body data-spy="scroll">
-
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
-                        <span class="sr-only">Cambiar estado navegaci&oacute;n</span>
+                        <span class="sr-only">Cambiar estado navegación</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -35,9 +35,11 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav scroll-to navbar-right">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#proposals">CfP</a></li>
-                        <li><a href="#where">D&oacute;nde</a></li>
-                        <li><a href="#organizers">Organizaci&oacute;n</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#schedule">Programa</a></li>
+                        <li><a href="#where">Dónde</a></li>
+                        <li><a href="#tickets">Entradas</a></li>
+                        <li><a href="#organizers">Organización</a></li>
                         <li><a href="#sponsors">Sponsors</a></li>
                     </ul>
                 </div>
@@ -73,61 +75,235 @@
         </section><!--home-->
 
 
-        <section id="proposals" class="proposals">
+
+        <section id="speakers" class="speakers-section">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                        <h2>Participa</h2>
+                        <h2>Speakers</h2>
                         <span class="center-line"></span>
                         <p>
-                            ¿Quieres participar como ponente dando una charla? <br>
-                            No te lo pienses. Accede al formulario e incribe tu propuesta.
+                            Hemos seleccionado los mejores ponentes para que nos cuenten
+                            su experiencia con las tecnologías de JavaScript.
                         </p>
                     </div>
                 </div>
+                
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <h3>Fechas Importantes</h3>
-                    </div>
+                   
+                    <ul class="speakers">
+                      <li>
+                        <div class="img-speaker-box">
+                          <img src="img/speakers/speaker-9.jpg" width="200" height="200" class="img-circle" alt="Enrique Amodeo">
+                          <span class="center-line"></span>
+                          <h3 class="speaker-name">Enrique Amodeo</h3>
+                          <div class=" text-center">
+                              <ul class="list-inline social">
+                                  <li><a href="https://twitter.com/eamodeorubio"><span class="sr-only">Twitter de Enrique Amodeo</span> <i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="https://www.linkedin.com/in/enrique-amodeo-rubio-83344a26"><span class="sr-only">Linkedin de Enrique Amodeo</span> <i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                          </div>
+                          <p class="speaker-bio">
+						  Enrique es un referente en la comunidad de JavaScript, y cofundador de MadridJS. Entre sus especialidades, se cuenta el desarrollo en JavaScript, HTML5, Java, JEE, la programación orientada a objetos, las técnicas de desarrollo dirigidas por las pruebas TDD & BDD, el diseño de APIs Web orientadas a recursos o el uso de metodologías ágiles como Scrum, Kanban o XP.
+						  </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                          <img src="img/speakers/speaker-1.jpg" width="200" height="200" class="img-circle" alt="Carlos Ble">
+                          <span class="center-line"></span>
+                          <h3 class="speaker-name">Carlos Ble</h3>
+                          <div class=" text-center">
+                              <ul class="list-inline social">
+                                  <li><a href="https://twitter.com/@carlosble"><span class="sr-only">Twitter de Carlos Ble</span>  <i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="http://www.carlosble.com"><span class="sr-only">Página de Carlos Ble</span>  <i class="fa fa-home"></i></a></li>
+                              </ul>
+                          </div>
+                          <p class="speaker-bio">
+						  Desarrollador vocacional, mentor, entrenador, autor, conferenciante, emprendedor. Ayuda a equipos y organizaciones a escribir mejor software y disfruta programando herramientas que ayuden a los demas. Mas info en carlosble.com.
+						  </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                          <img src="img/speakers/speaker-2.jpg" width="200" height="200" class="img-circle" alt="Rafael Casuso">
+                          <span class="center-line"></span>
+                          <h3 class="speaker-name">Rafael Casuso</h3>
+                          
+                          <div class=" text-center">
+                              <ul class="list-inline social">
+                                  <li><a href="https://twitter.com/@Rafael_Casuso"><span class="sr-only">Twitter de Rafael Casuso</span>  <i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="https://www.linkedin.com/in/rafael-casuso-romate-5997015a"><span class="sr-only">Linkedin de Rafael Casuso</span>  <i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                          </div>
+                          <p class="speaker-bio">
+                                Lead Front-End Engineer con más de 8 años de experiencia, Rafael ha trabajado en grandes proyectos como Air Europa, Halcón Viajes, Loterías del Estado o LaCaixa. Ha participado de la revolución JavaScript, tanto en cliente como en servidor, y está muy interesado en React, Meteor, GraphQL o Redux.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                          <img src="img/speakers/speaker-3.jpg" width="200" height="200" class="img-circle" alt="Anler Hernández">
+                          <span class="center-line"></span>
+                          <h3 class="speaker-name">Anler Hernández</h3>
+                          <div class=" text-center">
+                              <ul class="list-inline social">
+                                  <li><a href="https://twitter.com/@anler"><span class="sr-only">Twitter de Anler Hernández</span> <i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="https://www.linkedin.com/in/anler-hern%C3%A1ndez-peral-23853320"><span class="sr-only">Linkedin de Anler Hernández</span> <i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                          </div>
+                          <p class="speaker-bio">
+                              Anler es semi-ingeniero venido de Cuba que se re-inventó a sí mismo como programador web en España y, desde entonces, programar y aprender nuevas cosas es su pasión.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                            <img src="img/speakers/speaker-4.jpg" width="200" height="200" class="img-circle" alt="Pedro J. Molina">
+                            <span class="center-line"></span>
+                            <h3 class="speaker-name">Pedro J. Molina</h3>
+                            <div class=" text-center">
+                              <ul class="list-inline social">
+                                    <li><a href="https://twitter.com/@pmolinam"><span class="sr-only">Twitter de Pedro J. Molina</span>  <i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://linkedin.com/in/pjmolina"><span class="sr-only">Linkedin de Pedro J. Molina</span> <i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="speaker-bio">
+                                Pedro J. es Doctor e Ingeniero en Informática. Actualmente es desarrollador de software independiente y ex-CTO de Icinetic, una compañía dedicada a crear herramientas para acelerar el trabajo de los desarrolladores de software y en la que se han creado productos como Hivepod o Buildup.</p>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="img-speaker-box">
+                            <img src="img/speakers/speaker-5.jpg" width="200" height="200" class="img-circle" alt="Jesús Pérez Rubio">
+                            <span class="center-line"></span>
+                            <h3>Jesús Pérez Rubio</h3>
+                            <div class=" text-center">
+                                <ul class="list-inline social">
+                                    <li><a href="https://twitter.com/@jesusprubio"><span class="sr-only">Twitter de Jesús Pérez Rubio</span> <i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/jesusprubio"><span class="sr-only">Github de Jesús Pérez Rubio</span> <i class="fa fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="speaker-bio">
+                                Entusiasta de la seguridad y el software libre,  Jesús trabaja como desarrollador Node.js en 3nder. En otras vidas fue programador VoIP, administrador de sistemas e incluso pentester. Época en la que implementó Bluebox-ng, un escáner de vulnerabilidades para este tipo de entornos. Ha sido ponente en importantes conferencias como Black Hat (Arsenal), Codemotion, GSICKMinds, MorterueloCon o Hackmeeting.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                            <img src="img/speakers/speaker-10.jpg" width="200" height="200" class="img-circle" alt="Gonzalo Ruiz de Villa">
+                            <span class="center-line"></span>
+                            <h3>Gonzalo Ruiz de Villa</h3>
+                            <div class=" text-center">
+                                <ul class="list-inline social">
+                                    <li><a href="https://twitter.com/@gruizdevilla"><span class="sr-only">Twitter de Gonzalo Ruiz de Villa</span> <i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/gonzaloruizdevilla"><span class="sr-only">Github de Gonzalo Ruiz de Villa</span> <i class="fa fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="speaker-bio">Ingeniero, Google Developer Expert y fundador de Adesis Netlife.</p>
+                            
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                            <img src="img/speakers/speaker-6.jpg" width="200" height="200" class="img-circle" alt="Javi Santana">
+                            <span class="center-line"></span>
+                            <h3>Javi Santana</h3>
+                            <div class=" text-center">
+                                <ul class="list-inline social">
+                                    <li><a href="https://twitter.com/@javisantana"><span class="sr-only">Twitter de Javi Santana</span> <i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/javisantana"><span class="sr-only">Twitter de Javi Santana</span> <i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="speaker-bio">
+                                Javi Santana es un programador de provincias. Desarrolla software para agricultores desde hace 9 años cuando fundó agroguía. Desde entonces, sigue creando herramientas que hacen la vida más fácil a los agricultores. Durante ese camino se cruzó con CartoDB donde se encarga de que el software que ayuda a la NASA, Twitter, Wall Street Journal y otras grandes empresas a contar sus historias sobre mapas funcione como un reloj.</p>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                            <img src="img/speakers/speaker-7.jpg" width="200" height="200" class="img-circle" alt="Javi Velasco">
+                            <span class="center-line"></span>
+                            <h3>Javi Velasco</h3>
+                            <div class=" text-center">
+                                <ul class="list-inline social">
+                                    <li><a href="https://twitter.com/@javivelasco"><span class="sr-only">Twitter de Javi Velasco</span> <i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.github.com/javivelasco"><span class="sr-only">Github de Javi Velasco</span> <i class="fa fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="speaker-bio">
+                                Javi Velasco es Frontend Engineer en Audiense y lleva años inmerso en el desarrollo software. Ha formado parte del equipo de Floqq, Mindster, Imixme y Traity, y ha podido desarrollar con Ruby, Python y, muy especialmente, en JavaScript. En el último año ha desarrollado React Toolbox, una librería de componentes de React open source que implementa la especificación de Material Design de Google.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-speaker-box">
+                            <img src="img/speakers/speaker-8.jpg" width="200" height="200" class="img-circle" alt="Javier Vélez">
+                            <span class="center-line"></span>
+                            <h3>Javier Vélez</h3>
+                            <div class=" text-center">
+                                <ul class="list-inline social">
+                                    <li><a href="https://twitter.com/@javiervelezreye"><span class="sr-only">Twitter de Javier Vélez</span> <i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://www.javiervelezreyes.com"><span class="sr-only">Página de Javier Vélez</span> <i class="fa fa-home"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="speaker-bio">
+                                Licenciado por la UPM desde el año 2001 y doctor en informática por la UNED desde el año 2009, Javier conjuga sus labores como profesor e investigador con la consultoría y la formación técnica para empresa. Su línea de trabajo actual se centra en la innovación y desarrollo de tecnologías para la Web. Además realiza actividades de evangelización y divulgación en diversas comunidades IT y es coordinador de varios grupos de ámbito local como NodeJS Madrid o Madrid JS. Forma parte del programa Polymer Polytechnic Speaker y es mentor del capítulo de Madrid de Node School.</p>
+                        </div>
+                      </li>
+                    </ul>
                 </div>
+            </div>  
+        </section><!--Speakers-->
+        
+        <section id="schedule" class="schedule-section">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <ul class="proposals-style list-unstyled">
-                           <li class="clearfix">
-                                <div class="detail">
-                                    <h4>L&iacute;mite para Env&iacute;o de Propuestas</h4>
-                                    <span>Fecha l&iacute;mite en aceptamos propuestas.</span>
-                                    <span class="date">21/02/2016</span>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <div class="detail">
-                                    <h4>Notificaci&oacute;n de Aceptaci&oacute;n</h4>
-                                    <span>Fecha en que comunicaremos las propuestas aceptadas.</span>
-                                    <span class="date">03/2016</span>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="col-sm-6 col-sm-offset-3 center-title text-center">
+                        <h2>Programa</h2>
+                        <span class="center-line"></span>
+                        <p>Las mejores sesiones sobre el ecosistema tecnológico de JavaScript.</p>
+                        <p>Un día entero de talleres y otro de apasionantes charlas.</p>
                     </div>
-                </div> <br><br>
+                </div><!--section title-->
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <a target="_blank" href="https://goo.gl/GC6LS4" class="btn btn-dark btn-lg">Env&iacute;a tu Propuesta</a>
-                    </div>
+                    <div class="koliseo-schedule"></div>
+                    <script>
+                      // Feel free to replace with your own way to load polyfill code.
+
+                      /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+                      function loadJS( src, cb ){
+                        'use strict';
+                        var ref = window.document.getElementsByTagName( 'script' )[ 0 ];
+                        var script = window.document.createElement( 'script' );
+                        script.src = src;
+                        script.async = true;
+                        ref.parentNode.insertBefore( script, ref );
+                        if (cb && typeof(cb) === 'function') {
+                          script.onload = cb;
+                        }
+                        return script;
+                      }
+
+                      function onLoad() {
+                        if (typeof Koliseo !== 'undefined' && Koliseo.agenda && typeof fetch !== 'undefined') {
+                          Koliseo.agenda.render({
+                            c4pUrl: 'https://www.koliseo.com/jsdayes/jsday-es-2016/r4p/5683535625060352',
+                            agendaUrl: 'https://www.koliseo.com/jsdayes/jsday-es-2016/r4p/5683535625060352/agenda',
+                            element: document.querySelector('.koliseo-schedule')
+                          })
+                        }
+                      }
+
+                      (typeof fetch === 'undefined') && loadJS('js/koliseo-polyfill.js', onLoad)
+                      loadJS('js/koliseo-agenda.js', onLoad)
+                      </script>
                 </div>
-
-
             </div>
-        </section><!--proposals-->
-
-
+        </section>
+       
         <section class="banner shadow">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 center-title text-center">
                        <div class="overImg">
-                          <h2>As&iacute; fue <span class="name">JSDayES 2015</span></h2>
-                          <p>El año pasado, la primera edici&oacute;n de JSDay fue una pasada.</p>
+                          <h2>Así fue <span class="name">JSDayES 2015</span></h2>
+                          <p>La primera edición de JSDay fue una pasada.</p>
                           <p>¿Te lo vas a perder este año?</p>
                         </div>
                     </div>
@@ -190,7 +366,7 @@
                         <h2>D&oacute;nde</h2>
                         <span class="center-line"></span>
                         <p>
-                            Para esta segunda edici&oacute;n hemos reservado un espacio excepcional <br>
+                            Para esta segunda edici&oacute;n hemos reservado un espacio excepcional:<br>
                             Campus Madrid. En pleno centro de la ciudad.
                         </p>
                     </div>
@@ -209,6 +385,68 @@
                 </div>
             </div>
         </section><!--Where-->
+        
+        <section id="tickets" class="tickets-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 center-title text-center">
+                        <h2>Entradas</h2>
+                        <span class="center-line"></span>
+                        <p>
+                            Hemos confeccionado varios tipos de entradas seg&uacute;n tus necesidades.
+                            Si te das prisa puedes reservar el descuento de los primeros dias. 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="pricing-simple popular">
+                            <h3>Early Bird</h3>
+                            <h4>25€</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check-square"></i> Unconference y Workshop (29/04)</li>
+                                <li><i class="fa fa-check-square"></i> Acceso a charlas (30/04)</li>
+                                <li><i class="fa fa-check-square"></i> Comida (30/04) </li>
+                                <li><i class="fa fa-check-square"></i> Pack JSDayES </li>
+                            </ul>
+                            <div class="bottom">
+                                <p><strong>AGOTADAS</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="pricing-simple">
+                            <h3>Normales</h3>
+                            <h4>50€</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check-square"></i> Unconference y Workshop (29/04)</li>
+                                <li><i class="fa fa-check-square"></i> Acceso a charlas (30/04)</li>
+                                <li><i class="fa fa-check-square"></i> Comida (30/04) </li>
+                                <li><i class="fa fa-check-square"></i> Pack JSDayES </li>
+                            </ul>
+                            <div class="bottom">
+                                <p><strong>AGOTADAS</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="pricing-simple">
+                            <h3>Cedidas por Google Campus Madrid</h3>
+                            <h4>50€</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check-square"></i> Unconference y Workshop (29/04)</li>
+                                <li><i class="fa fa-check-square"></i> Acceso a charlas (30/04)</li>
+                                <li><i class="fa fa-check-square"></i> Comida (30/04) </li>
+                                <li><i class="fa fa-check-square"></i> Pack JSDayES </li>
+                            </ul>
+                            <div class="bottom">
+                                <p><strong>AGOTADAS</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--Tikets-->
 
 
         <section class="banner shadow">
@@ -218,7 +456,7 @@
                        <div class="overImg">
                             <h2>Contacto</h2>
                             <p>
-                              Para cualquier duda o sugerencia que tengas <br>
+                              Para cualquier duda o sugerencia que tengas,<br>
                               No dudes en ponerte en contacto nos nosotros.
                             </p><br /><br />
                             <div class="text-center">
@@ -244,33 +482,33 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="organizers-slider" class="organizers-slider">
-                        <div class="item">
+                    <ul id="organizers-slider" class="organizers-slider">
+                        <li class="item">
                             <div class="organizers-box">
-                                <a href="http://www.meetup.com/es-ES/AngularJS_Madrid/"><img src="img/organizer-1.png" class="img-responsive" alt="AngularJS Madrid"></a>
+                                <a href="http://www.meetup.com/es-ES/Madrid-Polymer-Group/"><img src="img/organizacion/organizer-4.png" width="231" height="80" class="img-responsive" alt="Madrid Polymer Group"></a>
                             </div>
-                        </div>
-                        <div class="item">
+                        </li>
+                        <li class="item">
                             <div class="organizers-box">
-                                <a href="http://www.meetup.com/es-ES/Node-js-Madrid/"><img src="img/organizer-2.png" class="img-responsive" alt="NodeJS Madrid"></a>
+                                <a href="http://www.meetup.com/es-ES/Node-js-Madrid/"><img src="img/organizacion/organizer-2.png" width="268" height="85" class="img-responsive" alt="NodeJS Madrid"></a>
                             </div>
-                        </div>
-                        <div class="item">
+                        </li>
+                        <li class="item">
                             <div class="organizers-box">
-                                <a href="http://www.meetup.com/es-ES/madridjs/"><img src="img/organizer-3.png" class="img-responsive" alt="Madrid JS"></a>
+                                <a href="http://www.meetup.com/es-ES/madridjs/"><img src="img/organizacion/organizer-3.png" width="268" height="84" class="img-responsive" alt="Madrid JS"></a>
                             </div>
-                        </div>
-                        <div class="item">
+                        </li>
+                         <li class="item">
                             <div class="organizers-box">
-                                <a href="http://www.meetup.com/es-ES/Madrid-Polymer-Group/"><img src="img/organizer-4.png" class="img-responsive" alt="Madrid Polymer Group"></a>
+                                <a href="http://www.meetup.com/es-ES/AngularJS_Madrid/"><img src="img/organizacion/organizer-1.png" width="242" height="86" class="img-responsive" alt="AngularJS Madrid"></a>
                             </div>
-                        </div>
-                        <div class="item">
+                        </li>
+                        <li class="item">
                             <div class="organizers-box">
-                                <a href="http://www.gacetatecnologica.com/"><img src="img/organizer-5.png" class="img-responsive" alt="Gaceta Tecnol&oacute;gica"></a>
+                                <a href="http://www.gacetatecnologica.com/"><img src="img/organizacion/organizer-5.png" class="img-responsive" width="268" height="91" alt="Gaceta Tecnológica"></a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section><!--organizers-->
@@ -282,11 +520,155 @@
                     <div class="col-sm-6 col-sm-offset-3 center-title text-center">
                         <h3>Sponsors</h3>
                         <span class="center-line"></span>
-                        <p>
-                            Patrocinar ofrece una oportunidad &uacute;nica para exponer su marca y encontrar talentos y perfiles especializados en tecnolog&iacute;as JavaScript.
-                        </p>
+                        <p>Patrocinar ofrece una oportunidad &uacute;nica para exponer tu marca y encontrar talentos y perfiles especializados en tecnolog&iacute;as JavaScript.</p>
                     </div>
                 </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h4>Diamond</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <ul class="logos">
+                    
+                      <li>
+                        <div class="box">
+                          <a href="http://www.gft.com"><img src="img/sponsors/gft.png" width="270" height="49" class="img-responsive" alt="GFT"></a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h4>Platinum</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <ul class="logos">
+                    
+                      <li>
+                        <div class="box">
+                          <a href="https://www.paradigmadigital.com/"><img src="img/sponsors/paradigma.png" width="270" height="70" class="img-responsive" alt="Paradigma Digital"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://www.fictizia.com/"><img src="img/sponsors/fictizia.png" width="270" height="74" class="img-responsive" alt="Fictizia"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://www.kairosds.com/"><img src="img/sponsors/kairos.jpg" width="270" height="158" class="img-responsive" alt="KAIRÓS Digital Solutions"></a>
+                        </div>
+                      </li>
+                     
+                    
+                    </ul>
+                    
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h4>Gold</h4>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <ul class="logos">
+                      <li>
+                        <div class="box">
+                          <a href="http://www.todojs.com"><img src="img/sponsors/todoJS.png" width="220" height="33" class="img-responsive" alt="todojs.com"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://www.intelygenz.es/"><img src="img/sponsors/intelygenz.png" width="220" height="85" class="img-responsive" alt="intelygenz: if you have a dream, we write the code"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://www.redradix.com/"><img src="img/sponsors/redradix.png" width="220" height="63" class="img-responsive" alt="redradix"></a>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h4>Silver</h4>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <ul class="logos">
+                      <li>
+                        <div class="box">
+                          <a href="http://kaleidos.net/"><img src="img/sponsors/kaleidos.png" width="200" height="56" class="img-responsive" alt="Kaleidos"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://www.transparentcdn.com/"><img src="img/sponsors/transparent_cdn.png" width="200" height="43" class="img-responsive" alt="Transparent CDN"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="https://www.koliseo.com/"><img src="img/sponsors/koliseo.png" width="200" height="66" class="img-responsive" alt="Koliseo"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="https://fikstores.com/es"><img src="img/sponsors/fikstores.png" width="200" height="63" class="img-responsive" alt="fik stores"></a>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <h4>Media Partners</h4>
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    
+                    <ul class="logos">
+                    
+                      <li>
+                        <div class="box">
+                          <a href="http://www.gacetatecnologica.com/"><img src="img/sponsors/gaceta.png" class="img-responsive" width="180" height="61" alt="Gaceta Tecnológica"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://www.ticjob.es"><img src="img/sponsors/ticjob.png" width="180" height="102" class="img-responsive" alt="ticjob.es"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://betabeers.com/"><img src="img/sponsors/betabeers.png" width="180" height="34" class="img-responsive" alt="Betabeers"></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <a href="http://autentia.com/"><img src="img/sponsors/autentia.png" width="180" height="56" class="img-responsive" alt="Autentia. Soporte a desarrollo inform&aacute;tico"></a>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                </div>
+
+                
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 center-title text-center">
                         <h4>Modelos de patrocinios</h4>
@@ -503,7 +885,7 @@
                         </table>
                     </div>
                     <div class="col-sm-8 col-sm-offset-2 center-title text-center">
-                        <h4><b>Otras F&oacute;rmulas de Patrocinio</b></h4><br>
+                        <h4>Otras Fórmulas de Patrocinio</h4>
                         <table id="other-sponsor-mobile-table" class="table">
                             <tbody>
                                 <tr>
@@ -565,7 +947,7 @@
                                 <tr>
                                     <th scope="row">Sweet Break</th>
                                     <td>500 €</td>
-                                    <th scope="row">Lunch Break</th>
+                                    <th scope="row">Icebreaker event</th>
                                     <td>600 €</td>
                                     <th scope="row">Community Premium support</th>
                                     <td>300 €</td>
@@ -576,9 +958,10 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <a target="_blank" href="mailto:hola@jsday.es" class="btn btn-dark btn-lg">Apúntate como spónsor</a>
+                        <a href="mailto:hola@jsday.es" class="btn btn-dark btn-lg">Apúntate como spónsor</a>
                     </div>
                 </div>
+                
             </div>
         </section><!--sponsors-->
 
