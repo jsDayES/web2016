@@ -6,6 +6,7 @@ var fs          = require ('fs');
 var $           = require ('gulp-load-plugins')();
 var runSequence = require ('run-sequence');
 var webserver   = require ('gulp-webserver');
+var merge       = require ('merge-stream');
 var del         = require ('del');
 
 var paths = {
@@ -23,7 +24,12 @@ var paths = {
         'css/jquery-ui.min.css',
         'css/style.css',
         'css/kagenda-styles.css',
-        'css/custom.css'
+        'css/custom.css',
+        'css/codigo-page.css'
+    ],
+    code    : [
+        'css/custom.css',
+        'css/codigo-page.css'
     ],
     js     : [
         './js/jquery.min.js',
@@ -69,10 +75,17 @@ gulp.task ('koliseo', function () {
 });
 
 gulp.task ('css', function () {
-    return gulp.src (paths.css)
+    var page =  gulp.src (paths.css)
         .pipe ($.concat ('main.css'))
         .pipe ($.cssmin ())
         .pipe (gulp.dest (paths.dist + '/css/'));
+        
+    var codePage = gulp.src (paths.code)
+        .pipe ($.concat ('main-conduct.css'))
+        .pipe ($.cssmin ())
+        .pipe (gulp.dest (paths.dist + '/css/'));
+        
+    return merge(page, codePage);
 });
 
 gulp.task ('fonts', function () {
@@ -81,7 +94,7 @@ gulp.task ('fonts', function () {
 });
 
 gulp.task ('build', ['images', 'fonts', 'koliseo', 'js', 'css'], function () {
-    return gulp.src ('index.html')
+    return gulp.src (['index.html', 'codigodeconducta.html'])
         .pipe ($.useref ())
         .pipe ($.minifyHtml ({
             quotes : true,
