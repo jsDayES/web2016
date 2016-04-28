@@ -120,6 +120,11 @@ iframe{ max-width: 100%; }
 
 .social a i { margin:0; }
 
+.streaming-section {
+  padding-top: 80px;
+  padding-bottom: 0;
+  background-color: #fff; }
+
 /**********************
 
 Speakers style
@@ -130,7 +135,7 @@ ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-st
 .speakers > li { width:300px; margin: 0 1em;   }
 .speakers .img-speaker-box { text-align:center }
 .speakers-section {
-  padding-top: 80px;
+  padding-top: 0;
   padding-bottom: 50px;
   background-color: #fff; }
 
