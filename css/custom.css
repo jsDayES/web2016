@@ -124,6 +124,10 @@ iframe{ max-width: 100%; }
   padding-top: 80px;
   padding-bottom: 0;
   background-color: #fff; }
+  
+.streaming-section p { margin-top:1em }
+.streaming-section a { color:#89621a }
+.streaming-section iframe { max-width: initial }
 
 /**********************
 
@@ -132,7 +136,7 @@ Speakers style
 **********************/
 
 ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-style:none    }
-.speakers > li { width:300px; margin: 0 1em;   }
+.speakers > li { width:300px; margin: 0 2em;   }
 .speakers .img-speaker-box { text-align:center }
 .speakers-section {
   padding-top: 0;
@@ -159,6 +163,8 @@ ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-st
   .welcome{ padding: .5em 0; }
   .logos li { display:inline-block; margin:1em 1em 0 0 }
   .box img { display:initial }
+  .speakers > li { margin: 0 1em;   }
+  .streaming-section iframe { max-width: 100% }
 }
 @media (max-width: 414px) {
   #sponsor-table,#other-sponsor-table{ display: none; }

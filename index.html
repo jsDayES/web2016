@@ -66,11 +66,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text-center">
-                            <div class="count-down-1" id="clock"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section><!--home-->
@@ -78,16 +73,13 @@
         <section id="streaming" class="streaming-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 center-title text-center">
+                    <div class="center-title text-center">
                         <h2>¡Síguenos en directo!</h2>
+                        <p>Sigue por streaming el JSDayES, la mejor conferencia sobre JavaScript en español.</p>
+                        <p>Patrocinado por <a href="http://www.todojs.com/">todoJS</a> y <a href="http://www.transparentcdn.com/">Transparent CDN</a>.</p>
                         <span class="center-line"></span>
                         <iframe src="http://eventos.televeo.com/player/aec" frameborder="0" width="720" height="405" allowfullscreen></iframe>
                     </div>
-                </div>
-                
-                <div class="row">
-                   
-                    
                 </div>
             </div>  
         </section><!--Streaming-->
@@ -1007,18 +999,6 @@
         <script src="js/custom.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
         <!-- endbuild-->
-        <script>
-            $(document).ready(function () {
-                $('#clock').countdown('2016/04/29', function (event) {
-                    var $this = $(this).html(event.strftime(''
-                            + '<div class="box-1 counts"><span>%w</span> <p>weeks</p></div> '
-                            + '<div class="box-1 counts"><span>%d</span> <p>days</p></div> '
-                            + '<div class="box-1 counts"><span>%H</span> <p>hr</p></div> '
-                            + '<div class="box-1 counts"><span>%M</span> <p>min</p></div> '
-                            + '<div class="box-1 counts"><span>%S</span> <p>sec</p></div>'));
-                });
-            });
-        </script>
 
     </body>
 </html>
