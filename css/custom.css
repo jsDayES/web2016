@@ -139,7 +139,7 @@ ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-st
 .speakers > li { width:300px; margin: 0 2em;   }
 .speakers .img-speaker-box { text-align:center }
 .speakers-section {
-  padding-top: 0;
+  padding-top: 50px;
   padding-bottom: 50px;
   background-color: #fff; }
 
