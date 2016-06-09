@@ -159,6 +159,44 @@ ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-st
     font-size: 13px; }
     
 
+.money-section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+}
+
+.money-section td, .money-section thead th:last-child {
+  text-align: right;
+}
+
+.money-section table {
+  width: 100%;
+  margin-bottom:1em;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.money-section thead th {
+  background-color: #f2b84b;
+}
+
+.money-section tbody th, .money-section .especie th {
+  font-weight: normal;
+}
+
+.money-section tfoot td {
+  font-weight: bold
+}
+
+.money-section th, .money-section td {
+  padding: .5em;
+}
+
+.money-section a {
+  color:#89621a;
+}
+    
+
 @media (max-width: 768px) {
   .welcome{ padding: .5em 0; }
   .logos li { display:inline-block; margin:1em 1em 0 0 }
